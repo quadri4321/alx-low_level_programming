@@ -8,27 +8,29 @@
 **/
 int main(void)
 {
-int n, s;
+int n;
+int last;
 
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-/* your code goes there */
-s = n % 10;
-if (s > 5)
+last = n % 10;
+if (last == 0)
 {
-printf("Last digit of %d is %d and is greater than 5\n", n, s);
+printf("Last digit of %d is %d and is 0\n" n, last);
 }
-if (num == 0)
-else if (s == 0)
+else
 {
-printf("Last digit of %d is %d and is 0\n", n, s);
+if (last > 5)
+{
+printf("Last digit of %d is %d and is greater than 5\n" n, last);
+else if (last < 6)
+{
+printf("Last digit of %d is %d and is less than 6 and not 0\n" n, last);
 }
-if (num < 6)
-else if (s < 6)
-{
-printf("Last digit of %d is %d and is less than 6 and not 0\n", n, s);
 }
 return (0);
 }
+
+
 
 
