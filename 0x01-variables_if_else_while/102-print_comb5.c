@@ -1,48 +1,30 @@
 #include <stdio.h>
 /**
- * main - Entry point
- * This program prints comma-separated
- * combined digits and numbers
- * Return: 0 (Success)
+ * main - prints all possibile combination of two-two digits number
+ * Return: 0 (success)
 **/
 int main(void)
 {
-int i;
-int j;
-int counter1;
-int k;
-int l;
-int counter2;
-
-counter1 = 0;
-for (i = 48; i < 58; i++)
+int i, j;
+for (i = 0; i < 100; i++)
 {
-if (counter1 == 99)
-break;
-for (j = 48; j < 58; j++)
+for (j = 0; j < 100; j++)
 {
-counter2 = counter1 + 1;
-counter1++;																for (k = (counter2 / 10) + 48; k <= 57; k++)
+if (i < j)
 {
-for (l = (counter2 % 10) + 48; l <= 57; l++)
+putchar((i / 10) + 48);
+putchar((i % 10) + 48);
+putchar(' ');
+putchar((j / 10) + 48);
+putchar((j % 10) + 48);
+if (i != 98 || j != 99)
 {
-counter2++;
-putchar(i);
-putchar(j);
-putchar(32);
-putchar(k);
-putchar(l)
-if (counter1 != 99)
-{
-putchar(44);
-putchar(32)
-}
-else
-{
-putchar(10);
+putchar(',');
+putchar(' ');
 }
 }
 }
-}																	}
+}
+putchar('\n');
 return (0);
 }
