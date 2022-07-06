@@ -1,7 +1,6 @@
 #include "main.h"
 /**
- * main- Entry point
- * C programs that prints 10 times the alphabet, in lowercase
+ * print_alphabet_x10 - repeats print_alphabet 10 times
  * Return: Nothing
 **/
 void print_alphabet_x10(void)
@@ -15,7 +14,7 @@ for (k = 'a'; k <= 'z' k++)
 {
 _putchar(k);
 }
-_putchar('\n')
+_putchar('\n');
 }
 }
 
