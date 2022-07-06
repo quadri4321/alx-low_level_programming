@@ -6,6 +6,8 @@
 **/
 int main(void)
 {
+
+print_alphabet();
 int c;
 
 for (c = 'a'; c <= 'z'; c++)
