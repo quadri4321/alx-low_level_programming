@@ -2,20 +2,20 @@
 /**
  * main- Entry point
  * C programs that prints 10 times the alphabet, in lowercase
- * Return: 0 (if successful)
+ * Return: Nothing
 **/
-int main(void)
+void print_alphabet_x10(void)
 {
 int j;
 int k;
 
-for (k = 0; k <= 10; k++)
+for (j = 0; j <= 10; ++j)
 {
-for (j = 'a'; j <= 'z' j++)
+for (k = 'a'; k <= 'z' k++)
 {
-_putchar(j);
+_putchar(k);
 }
-_putchar("\n")
+_putchar('\n')
 }
 }
 
