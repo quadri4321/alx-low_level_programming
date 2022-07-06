@@ -5,6 +5,7 @@
 **/
 int main(void)
 {
+	
 	putchar('_');
 	putchar('p');
 	putchar('u');
@@ -13,7 +14,7 @@ int main(void)
 	putchar('h');
 	putchar('a');
 	putchar('r');
-	putchar("\n");
+	putchar('\n');
 
 	return(0);
 }
