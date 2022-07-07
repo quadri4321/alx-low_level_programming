@@ -4,16 +4,14 @@
  * Return: Nothing
 **/
 void print_alphabet_x10(void)
-{
-int j;
-int k;
+}
+char c, i;
 
-for (j = 0; j <= 10; ++j)
-void print_alphabet_x10(void)
+for (i = 0; i <= 9; i++)
 {
-for (k = 'a'; k <= 'z' k++)
+for (c = 'a'; c <= 'z'; c++)
 {
-_putchar(k);
+_putchar(c);
 }
 _putchar('\n');
 }
