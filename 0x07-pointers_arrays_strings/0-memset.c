@@ -5,16 +5,15 @@
  * @s: memory area to be filled
  * @b: char to copy
  * @n: number of times to copy b
- * Return: *s
+ * Return: dest
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-unsigned int size = 0;
+unsigned int i;
 
-while (size < n)
+for (i = 0; i < n; i++)
 {
-*(s + size) = b;
-size++;
+s[i] = b;
 }
 return (s);
 }
